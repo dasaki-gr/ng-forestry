@@ -19,9 +19,16 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "dsk",
       "styles": [
-        "styles.scss"
+        "styles.scss",
+        "../node_modules/font-awesome/css/font-awesome.min.css",
+        "./assets/mapskin/css/mapskin.min.css",
+        "./assets/styles/material-forestry-theme.scss"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/hammerjs/hammer.min.js",
+        "../node_modules/hammer-touchemulator/touch-emulator.js",
+        "../node_modules/proj4/dist/proj4.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
