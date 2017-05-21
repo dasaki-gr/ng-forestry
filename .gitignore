@@ -42,5 +42,5 @@ testem.log
 Thumbs.db
 
 # Developer Files
-ngForestry_Notes.txt
+*.gm
 *.key

@@ -1,0 +1,31 @@
+<form [formGroup]="registerForm">
+  <table class="example-full-width" cellspacing="0"><tr>
+  <td>
+  <md-input-container>
+    <input type="text" formControlName="firstname" mdInput placeholder="Firstname">
+    <md-error>This field is required!</md-error>
+  </md-input-container></td>
+  <td>
+  <md-input-container>
+    <input type="text" formControlName="lastname" mdInput placeholder="lastname">
+    <md-error>required</md-error>
+  </md-input-container></td>
+  </tr>
+  <tr>
+  <fieldset formGroupName="address">
+    <md-input-container>
+      <input type="text" formControlName="street" mdInput placeholder="street">
+    </md-input-container>
+
+    <md-input-container>
+      <input type="text" formControlName="zip" mdInput placeholder="zip">
+    </md-input-container>
+
+    <md-input-container>
+      <input type="text" formControlName="city" mdInput placeholder="city">
+    </md-input-container>
+  </fieldset>
+  </tr>
+  </table>
+  <button type="submit" [disabled]="!registerForm.valid" (click)="submitForm()">Submit</button>
+</form>

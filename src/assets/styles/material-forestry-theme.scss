@@ -1,3 +1,5 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
 @import '~@angular/material/theming';
 // Plus imports for other components in your app.
 
@@ -11,11 +13,11 @@
 // hue.
 // https://material.google.com/style/color.html#color-color-palette
 
-$candy-app-primary: mat-palette($mat-light-green);
-$candy-app-accent:  mat-palette($mat-teal, A200, A100, A400);
+$candy-app-primary: mat-palette($mat-teal);
+$candy-app-accent:  mat-palette($mat-teal, A400, A200, A700);
 
 // The warn palette is optional (defaults to red).
-$candy-app-warn:    mat-palette($mat-deep-orange);
+$candy-app-warn:    mat-palette($mat-pink, A400);
 
 // Create the theme object (a Sass map containing all of the palettes).
 $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
@@ -24,3 +26,42 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($candy-app-theme);
+
+// Define an alternate dark theme.
+$dark-primary: mat-palette($mat-blue-grey);
+$dark-accent:  mat-palette($mat-amber, A200, A100, A400);
+$dark-warn:    mat-palette($mat-deep-orange);
+$dark-theme:   mat-light-theme($dark-primary, $dark-accent, $dark-warn);
+
+// Include the alternative theme styles inside of a block with a CSS class. You can make this
+// CSS class whatever you want. In this example, any component inside of an element with
+// `.m2app-dark-theme` will be affected by this alternate dark theme instead of the default theme.
+.m2app-dark {
+  @include angular-material-theme($dark-theme);
+}
+
+// Define an alternate dark theme. (dodgerblue)
+$blue-primary: mat-palette($mat-indigo);
+$blue-accent:  mat-palette($mat-yellow, A200, A100, A400);
+// $blue-warn:    mat-palette($mat-light-green);
+$blue-theme:   mat-light-theme($blue-primary, $blue-accent);
+
+// Include the alternative theme styles inside of a block with a CSS class. You can make this
+// CSS class whatever you want. In this example, any component inside of an element with
+// `.m2app-dark-theme` will be affected by this alternate dark theme instead of the default theme.
+.m2app-blue {
+  @include angular-material-theme($blue-theme);
+}
+
+// Define an alternate dark theme. (dodgerblue)
+$purple-primary: mat-palette($mat-deep-purple);
+$purple-accent:  mat-palette($mat-amber, A200, A100, A400);
+$purple-warn:    mat-palette($mat-light-green);
+$purple-theme:   mat-light-theme($purple-primary, $purple-accent);
+
+// Include the alternative theme styles inside of a block with a CSS class. You can make this
+// CSS class whatever you want. In this example, any component inside of an element with
+// `.m2app-dark-theme` will be affected by this alternate dark theme instead of the default theme.
+.m2app-purple {
+  @include angular-material-theme($purple-theme);
+}
