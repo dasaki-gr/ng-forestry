@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'NgForestry works!';
   isDarkTheme: boolean = false;
 
-  private themeClick( themeDescr: string) {
+  public themeClick( themeDescr: string) {
     this.curTheme = 'm2app-'+themeDescr;
     console.log('themeClick='+this.curTheme);
   }

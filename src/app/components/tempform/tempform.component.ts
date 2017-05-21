@@ -23,7 +23,7 @@ export class TempformComponent implements OnInit {
     });
   }
 
-  private submitForm(){
+  public submitForm(){
     console.log (this.registerForm.value);
   }
 
