@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Temp01Component } from './temp01.component';
+import { CalcforestvalueComponent } from './calcforestvalue.component';
 
-describe('Temp01Component', () => {
-  let component: Temp01Component;
-  let fixture: ComponentFixture<Temp01Component>;
+describe('CalcforestvalueComponent', () => {
+  let component: CalcforestvalueComponent;
+  let fixture: ComponentFixture<CalcforestvalueComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Temp01Component ]
+      declarations: [ CalcforestvalueComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Temp01Component);
+    fixture = TestBed.createComponent(CalcforestvalueComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

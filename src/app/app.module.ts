@@ -25,11 +25,11 @@ import { AppComponent } from './app.component';
 import { TempformComponent } from './components/tempform/tempform.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { HomeComponent } from './components/home/home.component';
-import { Temp01Component } from './components/temp01/temp01.component';
+import { CalcforestvalueComponent } from './components/calcforestvalue/calcforestvalue.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'temp01', component: Temp01Component },
+  { path: 'calcforestvalue', component: CalcforestvalueComponent },
   { path: 'tempForm', component: TempformComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
@@ -40,7 +40,7 @@ const appRoutes: Routes = [
     TempformComponent,
     PageNotFoundComponent,
     HomeComponent,
-    Temp01Component
+    CalcforestvalueComponent
   ],
   imports: [
     BrowserModule,
